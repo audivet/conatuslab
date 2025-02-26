@@ -173,3 +173,5 @@ dist
 .pnp.*
 >>>>>>> 0a7bd12689339dfe16d97b199e0e83da1203bdd1
 node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
