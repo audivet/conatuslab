@@ -1,25 +1,34 @@
 # setup_nltk.py
+print("Checking Python environment...")
+import sys
+print(f"Using Python from: {sys.executable}")
+
+print("\nSetting up NLTK components...")
 import nltk
-import ssl
 
-try:
-    _create_unverified_https_context = ssl._create_unverified_context
-except AttributeError:
-    pass
-else:
-    ssl._create_default_https_context = _create_unverified_https_context
+# Define all the components we need
+required_packages = [
+    'punkt',
+    'averaged_perceptron_tagger',
+    'maxent_ne_chunker',
+    'words'
+]
 
-print("Starting NLTK data download...")
+# Download each component with proper error handling
+for package in required_packages:
+    print(f"\nDownloading '{package}'...")
+    try:
+        nltk.download(package, quiet=False)
+        print(f"Successfully downloaded {package}")
+    except Exception as e:
+        print(f"Error downloading {package}: {str(e)}")
+
+print("\nTesting basic NLTK functionality...")
 try:
-    print("Downloading 'punkt' package...")
-    nltk.download('punkt', quiet=False)
-    print("Download complete!")
-    
-    # Verify the download
     from nltk.tokenize import word_tokenize
-    test_sentence = "Testing the installation."
+    test_sentence = "Testing NLTK installation with a simple sentence."
     tokens = word_tokenize(test_sentence)
-    print("\nTest tokenization successful:", tokens)
-    print("\nAll NLTK setup completed successfully!")
+    print("\nTokenization test successful!")
+    print("Sample output:", tokens)
 except Exception as e:
-    print(f"An error occurred during setup: {str(e)}")
+    print(f"Test failed with error: {str(e)}")

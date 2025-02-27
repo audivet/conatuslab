@@ -1,0 +1,33 @@
+CONSULTING AGREEMENT
+
+This AGREEMENT is made on January 15, 2024, between ABC Technology, Inc., a Delaware corporation ("Client"), and Jane Smith, an independent consultant ("Consultant").
+
+1. SERVICES
+
+Consultant will provide technical consulting services as described in Exhibit A.
+
+2. COMPENSATION
+
+Client shall pay Consultant at the rate of $150 per hour, payable monthly. Total compensation shall not exceed $10,000 without prior written approval.
+
+3. TERM
+
+This Agreement shall commence on February 1, 2024, and continue until July 31, 2024, unless terminated earlier.
+
+4. CONFIDENTIALITY
+
+"Confidential Information" means any proprietary information disclosed by Client to Consultant. Consultant agrees to maintain all Confidential Information in strict confidence.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+CLIENT:
+ABC Technology, Inc.
+
+By: _________________________
+Name: John Johnson
+Title: Chief Technology Officer
+
+CONSULTANT:
+
+_________________________
+Jane Smith
