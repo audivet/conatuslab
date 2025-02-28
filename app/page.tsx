@@ -1,3 +1,4 @@
+// app/page.tsx
 import Navigation from './components/Navigation'
 import Features from './components/Features'
 import CoursePreview from './components/CoursePreview'
@@ -7,6 +8,11 @@ import ModuleContent from './components/ModuleContent'
 import CourseModules from './components/CourseModules'
 import Resources from './components/Resources'
 import { courses } from './components/curriculum';
+
+export const metadata = {
+  title: 'Conatus Lab - Transform Your Legal Career with Technology',
+  description: 'Bridge the gap between legal expertise and technology. Learn practical tech skills designed specifically for legal professionals.',
+};
 
 export default function Home() {
   return (
